@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+
+* {
+    font-family: 'Figtree', sans-serif;
+    margin: 0;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+.fixed-na {
+    background-color: #7b01fd;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    color: white;
+
+}
+
+.fixed-text {
+    display: flex;
+    justify-content: space-around;
+    padding: 3px 30px;
+}
+
+.fixed-text p {
+    padding-left: 5px;
+    padding-right: 10px;
+    transition: color 176ms ease-out 67ms;
+}
+
+.fixed-text p:hover {
+    color: #121212;
+}
+
+.fixed-text select {
+    background-color: #7b01fd;
+    border: none;
+    height: 27px;
+    margin-top: -3px;
+}
+
+.fixed-text option {
+    border: none;
+    background-color: #7b01fd;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    padding-right: 45px;
+    font-size: 16px;
+    background-color: #7b01fd;
+    border: 0px solid #000000;
+    border-radius: 0px;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+}
+
+.custom-select select:focus {
+    background: #7b01fd;
+    border: 0px solid #7b01fd;
+    border-radius: 5px;
+}
+
+.custom-select::after {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: #FFFFFF;
+    clip-path: polygon(50% 80%, 0 20%, 100% 20%);
+}
+
+.nava {
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 120px;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    color: white;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 34px;
+    padding-left: 5px;
+    transition: color 176ms ease-out 67ms;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #7b01fd;
+}
+
+.sign-box {
+    display: flex;
+    border: 0.12em solid;
+    align-items: center;
+    height: 35px;
+    justify-content: center;
+}
+
+.sign-box a {
+    text-decoration: none;
+    padding: 0 18px;
+    font-size: 18px;
+    
+}
+
+.main-nav {
+    padding: 40px 0;
+}
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+main{
+    padding: 20px;
+}
+
+.sort-options {
+    margin-bottom: 20px;
+}
+
+.sort-options label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.product-listing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.price {
+    color: #7b01fd;
+    font-weight: bold;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #7b01fd;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #4c009c;
+}
+
+select {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+footer {
+    background: #121212;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    height: 250px;
+}
+
+.ftr-logo {
+    margin-left: 150px;
+}
+
+.ftr-cont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.ftr-cont div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 195px;
+}
+
+.ftr-cont div h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.ftr-cont div a {
+    text-decoration: none;
+    color: white;
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.ftr-cont div a:hover {
+    color: #7b01fd;
+    transition: .4s;
+}

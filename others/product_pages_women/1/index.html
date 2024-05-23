@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pull-Over</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section class="fixed-na">
+            <div class="fixed-text">
+                <img src="../images/icons8-phone-24.png" alt="Phone icon">
+                <p>+21646293890</p>
+            </div>
+            <div class="fixed-text">
+                <img src="../images/icons8-cart-26.png" alt="Cart icon" height="22">
+                <p>Cart</p>
+            </div>
+            <div class="fixed-text">
+                <img src="../images/icons8-search-50.png" alt="Search icon" height="22">
+                <p>Search</p>
+            </div>
+            <div class="custom-select">
+                <select aria-label="Language selection">
+                    <option>English</option>
+                    <option>French</option>
+                </select>
+            </div>
+        </section>
+        <nav class="nava">
+            <img src="../images/Kinetic_Logo_Animation-ezgif.com-crop.gif" alt="Kinetic Logo" height="90">
+            <div class="nav-links">
+                <a href="">HOME</a>
+                <a href="">PRODUCTS</a>
+                <a href="">TOPSALE</a>
+                <div class="sign-box">
+                    <a href="">LOGIN</a> /
+                    <a href="">SIGNUP</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="product">
+                <div class="product-images">
+                    <img id="main-image" src="../images/woman1-f.webp" alt="Pull-Over" class="main-image">
+                    <div class="thumbnail-images">
+                        <img src="../images/woman1-b.webp" alt="Thumbnail 1" class="thumbnail" onclick="changeImage('../images/woman1-b.webp')">
+
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>Pull-Over</h1>
+                    <p class="price"><span class="promo">29,99 TND</span> <del>49,99 TND</del></p>
+                    <label for="color">Couleur</label>
+                    <input type="color" id="color" name="color">
+                    <label for="size">Taille</label>
+                    <select id="size" name="size">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <label for="quantity">Quantité</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                    <button id="add-to-cart" onclick="addToCart()">Ajouter au panier</button>
+                    <p class="availability">Disponibles dans d'autres couleurs ou tailles</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="ftr-logo"><img src="../images/Kinetic_Logo_Animation-ezgif.com-crop.gif" alt="Kinetic Logo" width="142" height="80"></div>
+        <div class="ftr-cont">
+            <div>
+                <h1>Let's do it together</h1>
+                <a href="./others/business/business.html">Kinetic Business</a>
+                <a href="./others/career/career.html">Careers</a>
+                <a href="./others/courier/courier.html">Couriers</a>
+            </div>
+            <div>
+                <h1>Links of interest</h1>
+                <a href="">About us</a>
+                <a href="">FAQ</a>
+                <a href="#popup2">Contact us</a>
+                <a href="../others/security/security.html">Security</a>
+            </div>
+            <div>
+                <h1>Follow us</h1>
+                <a href="https://www.facebook.com/profile.php?id=61558173630794">Facebook</a>
+                <a href="https://x.com/Kinetic_eshop">Twitter</a>
+                <a href="https://www.instagram.com/kinetic.eshop/">Instagram</a>
+            </div>
+            <div>
+                <div>
+                    <a href="https://apps.apple.com/app/id951812684?mt=8" target="_blank">
+                        <img alt="App Store" width="105" height="35" src="./images/app-store-button.svg"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.glovo&referrer=adjust_reftag%3DcaRaiHb37RunU%26utm_source%3DHomepage%2B-%2BAndroid%26utm_campaign%3Dfooter_null_en" target="_blank">
+                        <img alt="Google Play" width="112" height="35" src="./images/google-play-button.svg"></a>
+                </div>
+                <a href="">Terms & Conditions</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Cookies Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
